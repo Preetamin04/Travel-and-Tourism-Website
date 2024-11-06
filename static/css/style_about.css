@@ -1,0 +1,106 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color:#00CCFF;
+}
+.navbar {
+    display: flex;
+    justify-content: center; 
+    background-color: #f8f9fa; 
+    padding: 10px; 
+}  
+.nav-list {
+    list-style: none; /* Remove default list styles */
+    padding: 0; 
+    margin: 0;
+    display: flex; /* Use flexbox for list items */
+}  
+.nav-item {
+    margin: 0 15px; /* Add space between the items */
+}  
+.nav-link {
+    text-decoration: none; /* Remove underline from links */
+}
+.navbar .navbar-nav {
+    display: flex; /* Use flexbox for the nav items */
+    justify-content: center; /* Center the nav items */
+    width: 100%; /* Ensure full width for centering */
+}
+.options {
+    width: 100%; /* Ensure the options div takes full width */
+}
+
+.about_us {
+    margin-top:10px;
+    margin-bottom:auto;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.about{
+    margin:30px;
+    padding:5px;
+    font-size: 20px;
+}
+.about h1{
+    text-align:center;
+    color:black;
+    font-weight:bold;
+    font-size:40px;
+}
+.about p{
+    text-align:center;
+    padding:3px;
+    height: 60px;
+    color:#fff;
+}
+.about-item{
+    background-color: white; 
+    border-radius: 8px;
+    width:100%;
+    height: 550px;;
+    padding: 20px;
+    margin: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow */
+    transition: box-shadow 0.3s ease; /* Smooth shadow transition */
+    text-align: center; /* Center align text and images */
+    font-size:14px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.about-item h3{
+    font-size: 25px;
+    margin: 10px 0;
+}
+.about-item img{
+    width: 80px;
+    height: 70px;
+    padding:5px;
+    display: block;
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+.about-item hr{
+    width:46px;
+    height:6px;
+    background:#5fbff9;
+    margin:0 auto;
+    border:none;
+}
+.about-item p{
+    margin-top:20px;
+    text-align: justify;
+}
+.about-item:hover {
+    background-color: #21aa9c;
+    opacity:0.9;
+}
+.about-item:hover h3,
+.about-item:hover p{
+    color:#fff;
+}
+.about-item:hover hr{
+    background:#fff;
+}

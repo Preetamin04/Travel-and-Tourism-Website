@@ -1,0 +1,110 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #00d2ff, #3a47d5);
+}
+
+h1 {
+    text-align: center;
+    font-size: 24px;
+    color: #4c4c4c;
+    margin-bottom: 20px;
+}
+
+form {
+    width: 500px;
+    padding: 10px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+label {
+    font-size: 14px;
+    color: #4c4c4c;
+    margin-top: 10px;
+    display: block;
+    margin: bottom 5px;
+}
+
+/* Container for inline labels */
+.inline-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.inline-group .form-group {
+    display: flex;
+    flex-direction: column; /* Make labels and inputs vertical */
+    align-items: flex-start; /* Align labels and inputs to the left */
+    margin-right: 20px; /* Add spacing between groups */
+}
+
+.inline-group label {
+    margin-bottom: 5px; /* Add some spacing below the label */
+}
+
+.inline-group input[type="number"] {
+  width: calc(100% + 2px);
+}
+/* Input and select styling */
+input[type="text"],
+input[type="number"],
+select,
+textarea {
+    width: 100%;
+    padding: 6px;
+    margin: 6px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    border-bottom: 1px solid #cccccc;
+    outline: none;
+    font-size: 14px;
+    color: #4c4c4c;
+    background: transparent;
+}
+
+input[type="text"]:hover,
+input[type="number"]:hover,
+select:hover,
+textarea:hover {
+    border-color: #999;
+}
+
+#destination,
+#duration,
+#No_of_traveller,
+#accommodation_type,
+#transport_type {
+    width: 97.5%; /* Match the width of the Destination dropdown */
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    color: #ffffff;
+    background: linear-gradient(135deg, #00d2ff, #3a47d5);
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background: linear-gradient(135deg, #3a47d5, #00d2ff);
+}
+
+/* Remove default appearance for select dropdown */
+form select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
