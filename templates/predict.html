@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Cost Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style_predict.css') }}">
+</head>
+<body>
+    <h1>Predict Travel Cost</h1>
+    <form action="{{ url_for('predict') }}" method="POST">
+        <label for="destination">Destination (enter number):</label>
+        <input type="number" name="Destination" id="destination" min="1" max="9" required>
+        <small>
+            1: Amazon, 2: Andaman, 3: Antelope, 4: Azores, 5: Caves,<br>
+            6: Fuji, 7: Himalaya, 8: Iceland, 9: Reef
+        </small>
+        <br>
+        
+        <label for="duration">Duration (days):</label>
+        <input type="number" name="Duration" id="duration" required><br>
+
+        <label for="No_of_traveller">Total Traveller:</label>
+        <input type="number" name="No_of_traveller" id="No_of_traveller" required><br>
+
+        <div class="inline-group">
+            <div class="form-group">
+                <label for="No_of_Male">Male:</label>
+                <input type="number" name="No_of_Male" id="No_of_Male" required>
+            </div>
+            <div class="form-group">
+                <label for="No_of_Female">Female:</label>
+                <input type="number" name="No_of_Female" id="No_of_Female" required>
+            </div>
+            <div class="form-group">
+                <label for="No_of_child">Child:</label>
+                <input type="number" name="No_of_child" id="No_of_child" required>
+            </div>
+        </div>
+        <br>
+
+        <label for="accommodation_type">Accommodation Type (enter number):</label>
+        <input type="number" name="Accommodation_type" id="accommodation_type" min="1" max="8" required>
+        <small>1: Hotel, 2: Hostel, 3: Bed and Breakfast, 4: GuestBus, 5: Resort, 6: Vacation Rental, 7: Cabin, 8: Boutique Hotel</small>
+        <br>
+
+        <label for="transport_type">Transport Type (enter number):</label>
+        <input type="number" name="Transportation_type" id="transport_type" min="1" max="4" required>
+        <small>
+            1: Train, 2: Flight, 3: Rental Cars, 4: Rental Bus
+        </small>
+        <br><br>
+
+        <input type="submit" value="Predict">
+    </form>
+</body>
+</html>

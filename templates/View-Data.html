@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Test App</title>
+</head>
+<body>
+<table width="800px" align="center">
+<tr>
+<td align="center">{{ n }} records found </td>
+</tr>
+</table>
+<table width="800px" align="center">
+
+{% for temp in studentdata %}
+<tr>
+{% for t in temp %}
+<td>{{ t }} </td>
+{% endfor %}
+</tr>
+{% endfor %}
+</table> 
+</body>
+</html>

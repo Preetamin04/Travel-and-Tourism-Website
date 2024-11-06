@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>About Us</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style_about.css') }}">
+</head>
+
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <div class="options">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="/index">Home<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/predict">Predict Cost</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+</nav>
+
+<section id="about_us">
+    <div class="about_us">
+        <div class="about">
+            <h1>ABOUT US</h1>
+            <p>At Voyage Vista Travel, we are passionate about helping people to explore the world. Our mission is to make travel accessible for everyone. 
+                Our company was founded by four confidants who shared a love of travel. After years of working in corporate world,we decided to follow 
+                our passion and start our own travel company. We wanted to experience the same joy and wonder that we felt when we traveled.
+            </p>
+        </div>
+        <div id="about1">
+            <div class="content-box-lg">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="about-item text-center">
+                                <img class="about-item-image" src="{{ url_for('static', filename='css/images/mission.png') }}" alt="Mission" width="80" height="70">
+                                    <h3>MISSSION</h3>
+                                    <hr>
+                                    <p>Our mission is to craft exceptional travel experiences by delivering personalized, seamless service and leveraging 
+                                        our deep industry expertise. We are dedicated to exceeding our clients' expectations, offering curated journeys that 
+                                        inspire exploration and create lasting memories. Committed to sustainability and cultural sensitivity, we aim to make 
+                                        travel convenient and impactful, ensuring that every adventure enriches both the traveler and the destinations they visit.
+                                    </p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="about-item text-center">
+                                <img class="about-item-image" src="{{ url_for('static', filename='css/images/vission.png') }}" alt="Vission" width="80" height="70">
+                                    <h3>VISSION</h3>
+                                    <hr>
+                                    <p>Our vision is to redefine the travel experience by seamlessly blending innovation, luxury, and sustainability, creating 
+                                        transformative journeys that inspire and connect people worldwide. We strive to be the leading travel company renowned 
+                                        for crafting extraordinary, personalized adventures while fostering a deep respect for diverse cultures and the environment. 
+                                        Through our dedication to exceptional service and cutting-edge solutions, we envision a world where every trip not only 
+                                        fulfills dreams but also contributes positively to global communities and ecosystems.
+                                    </p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="about-item text-center">
+                                <img class="about-item-image" src="{{ url_for('static', filename='css/images/achievement.png') }}" alt="Achievement" width="80" height="70">
+                                    <h3>ACHIEVEMENTS</h3>
+                                    <hr>
+                                    <p>We are proud to have been named the Best Travel Company by Travel Weekely for thre years in a row. Our commitment to exceptional
+                                        customer service has also earned a five star rating on Trip Advisor and we are thrilled to have helped thousanfs of travelers
+                                        create unforgettable memories. Travel has facilitated the discovery of new places and experiences, enriched personal lives 
+                                        through diverse encounters, and spurred advancements in transportation and communication. It has also played a crucial role 
+                                        in promoting environmental awareness and sustainable practices, as well as supporting local economies and preserving cultural 
+                                        heritage. 
+                                    </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>     
+</body>
+</html>
